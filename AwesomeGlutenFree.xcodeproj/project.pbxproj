@@ -1,0 +1,570 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1545197F1BC9E1B50093A4D9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1545197E1BC9E1B50093A4D9 /* main.m */; };
+		154519821BC9E1B50093A4D9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 154519811BC9E1B50093A4D9 /* AppDelegate.m */; };
+		154519881BC9E1B50093A4D9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 154519861BC9E1B50093A4D9 /* Main.storyboard */; };
+		1545198A1BC9E1B50093A4D9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 154519891BC9E1B50093A4D9 /* Assets.xcassets */; };
+		1545198D1BC9E1B50093A4D9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1545198B1BC9E1B50093A4D9 /* LaunchScreen.storyboard */; };
+		154519981BC9E1B50093A4D9 /* AwesomeGlutenFreeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 154519971BC9E1B50093A4D9 /* AwesomeGlutenFreeTests.m */; };
+		154519A31BC9E1B50093A4D9 /* AwesomeGlutenFreeUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 154519A21BC9E1B50093A4D9 /* AwesomeGlutenFreeUITests.m */; };
+		154519B21BC9ECA70093A4D9 /* CustomTableTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 154519B11BC9ECA70093A4D9 /* CustomTableTableViewController.m */; settings = {ASSET_TAGS = (); }; };
+		154519B51BCA1C3B0093A4D9 /* CustomTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 154519B41BCA1C3B0093A4D9 /* CustomTableViewCell.m */; settings = {ASSET_TAGS = (); }; };
+		154519B81BCAF98E0093A4D9 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 154519B71BCAF98E0093A4D9 /* DetailViewController.m */; settings = {ASSET_TAGS = (); }; };
+		154519BB1BCC1D1C0093A4D9 /* CustomTableViewControllerEntrees.m in Sources */ = {isa = PBXBuildFile; fileRef = 154519BA1BCC1D1C0093A4D9 /* CustomTableViewControllerEntrees.m */; settings = {ASSET_TAGS = (); }; };
+		154519BE1BCE01D70093A4D9 /* CustomTableViewCellEntrees.m in Sources */ = {isa = PBXBuildFile; fileRef = 154519BD1BCE01D70093A4D9 /* CustomTableViewCellEntrees.m */; settings = {ASSET_TAGS = (); }; };
+		154519C11BCF3DFC0093A4D9 /* DetailViewControllerEntrees.m in Sources */ = {isa = PBXBuildFile; fileRef = 154519C01BCF3DFC0093A4D9 /* DetailViewControllerEntrees.m */; settings = {ASSET_TAGS = (); }; };
+		15A703DD1BD0116800A4829F /* CustomTableViewControllerSalads.m in Sources */ = {isa = PBXBuildFile; fileRef = 15A703DC1BD0116800A4829F /* CustomTableViewControllerSalads.m */; settings = {ASSET_TAGS = (); }; };
+		15A703E01BD07C6700A4829F /* CustomTableViewCellSalads.m in Sources */ = {isa = PBXBuildFile; fileRef = 15A703DF1BD07C6700A4829F /* CustomTableViewCellSalads.m */; settings = {ASSET_TAGS = (); }; };
+		15A703E31BD162C300A4829F /* DetailViewControllerSalads.m in Sources */ = {isa = PBXBuildFile; fileRef = 15A703E21BD162C300A4829F /* DetailViewControllerSalads.m */; settings = {ASSET_TAGS = (); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		154519941BC9E1B50093A4D9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 154519721BC9E1B50093A4D9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 154519791BC9E1B50093A4D9;
+			remoteInfo = AwesomeGlutenFree;
+		};
+		1545199F1BC9E1B50093A4D9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 154519721BC9E1B50093A4D9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 154519791BC9E1B50093A4D9;
+			remoteInfo = AwesomeGlutenFree;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1545197A1BC9E1B50093A4D9 /* AwesomeGlutenFree.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AwesomeGlutenFree.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1545197E1BC9E1B50093A4D9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		154519801BC9E1B50093A4D9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		154519811BC9E1B50093A4D9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		154519871BC9E1B50093A4D9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		154519891BC9E1B50093A4D9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1545198C1BC9E1B50093A4D9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1545198E1BC9E1B50093A4D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		154519931BC9E1B50093A4D9 /* AwesomeGlutenFreeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AwesomeGlutenFreeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		154519971BC9E1B50093A4D9 /* AwesomeGlutenFreeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AwesomeGlutenFreeTests.m; sourceTree = "<group>"; };
+		154519991BC9E1B50093A4D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1545199E1BC9E1B50093A4D9 /* AwesomeGlutenFreeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AwesomeGlutenFreeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		154519A21BC9E1B50093A4D9 /* AwesomeGlutenFreeUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AwesomeGlutenFreeUITests.m; sourceTree = "<group>"; };
+		154519A41BC9E1B50093A4D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		154519B01BC9ECA70093A4D9 /* CustomTableTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomTableTableViewController.h; sourceTree = "<group>"; };
+		154519B11BC9ECA70093A4D9 /* CustomTableTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomTableTableViewController.m; sourceTree = "<group>"; };
+		154519B31BCA1C3B0093A4D9 /* CustomTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomTableViewCell.h; sourceTree = "<group>"; };
+		154519B41BCA1C3B0093A4D9 /* CustomTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomTableViewCell.m; sourceTree = "<group>"; };
+		154519B61BCAF98E0093A4D9 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		154519B71BCAF98E0093A4D9 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		154519B91BCC1D1C0093A4D9 /* CustomTableViewControllerEntrees.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomTableViewControllerEntrees.h; sourceTree = "<group>"; };
+		154519BA1BCC1D1C0093A4D9 /* CustomTableViewControllerEntrees.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomTableViewControllerEntrees.m; sourceTree = "<group>"; };
+		154519BC1BCE01D70093A4D9 /* CustomTableViewCellEntrees.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomTableViewCellEntrees.h; sourceTree = "<group>"; };
+		154519BD1BCE01D70093A4D9 /* CustomTableViewCellEntrees.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomTableViewCellEntrees.m; sourceTree = "<group>"; };
+		154519BF1BCF3DFC0093A4D9 /* DetailViewControllerEntrees.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewControllerEntrees.h; sourceTree = "<group>"; };
+		154519C01BCF3DFC0093A4D9 /* DetailViewControllerEntrees.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewControllerEntrees.m; sourceTree = "<group>"; };
+		15A703DB1BD0116800A4829F /* CustomTableViewControllerSalads.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomTableViewControllerSalads.h; sourceTree = "<group>"; };
+		15A703DC1BD0116800A4829F /* CustomTableViewControllerSalads.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomTableViewControllerSalads.m; sourceTree = "<group>"; };
+		15A703DE1BD07C6700A4829F /* CustomTableViewCellSalads.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomTableViewCellSalads.h; sourceTree = "<group>"; };
+		15A703DF1BD07C6700A4829F /* CustomTableViewCellSalads.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomTableViewCellSalads.m; sourceTree = "<group>"; };
+		15A703E11BD162C300A4829F /* DetailViewControllerSalads.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewControllerSalads.h; sourceTree = "<group>"; };
+		15A703E21BD162C300A4829F /* DetailViewControllerSalads.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewControllerSalads.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		154519771BC9E1B50093A4D9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		154519901BC9E1B50093A4D9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1545199B1BC9E1B50093A4D9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		154519711BC9E1B50093A4D9 = {
+			isa = PBXGroup;
+			children = (
+				1545197C1BC9E1B50093A4D9 /* AwesomeGlutenFree */,
+				154519961BC9E1B50093A4D9 /* AwesomeGlutenFreeTests */,
+				154519A11BC9E1B50093A4D9 /* AwesomeGlutenFreeUITests */,
+				1545197B1BC9E1B50093A4D9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1545197B1BC9E1B50093A4D9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1545197A1BC9E1B50093A4D9 /* AwesomeGlutenFree.app */,
+				154519931BC9E1B50093A4D9 /* AwesomeGlutenFreeTests.xctest */,
+				1545199E1BC9E1B50093A4D9 /* AwesomeGlutenFreeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1545197C1BC9E1B50093A4D9 /* AwesomeGlutenFree */ = {
+			isa = PBXGroup;
+			children = (
+				154519801BC9E1B50093A4D9 /* AppDelegate.h */,
+				154519811BC9E1B50093A4D9 /* AppDelegate.m */,
+				154519861BC9E1B50093A4D9 /* Main.storyboard */,
+				154519891BC9E1B50093A4D9 /* Assets.xcassets */,
+				1545198B1BC9E1B50093A4D9 /* LaunchScreen.storyboard */,
+				1545198E1BC9E1B50093A4D9 /* Info.plist */,
+				1545197D1BC9E1B50093A4D9 /* Supporting Files */,
+				154519B01BC9ECA70093A4D9 /* CustomTableTableViewController.h */,
+				154519B11BC9ECA70093A4D9 /* CustomTableTableViewController.m */,
+				154519B31BCA1C3B0093A4D9 /* CustomTableViewCell.h */,
+				154519B41BCA1C3B0093A4D9 /* CustomTableViewCell.m */,
+				154519B61BCAF98E0093A4D9 /* DetailViewController.h */,
+				154519B71BCAF98E0093A4D9 /* DetailViewController.m */,
+				154519B91BCC1D1C0093A4D9 /* CustomTableViewControllerEntrees.h */,
+				154519BA1BCC1D1C0093A4D9 /* CustomTableViewControllerEntrees.m */,
+				154519BC1BCE01D70093A4D9 /* CustomTableViewCellEntrees.h */,
+				154519BD1BCE01D70093A4D9 /* CustomTableViewCellEntrees.m */,
+				154519BF1BCF3DFC0093A4D9 /* DetailViewControllerEntrees.h */,
+				154519C01BCF3DFC0093A4D9 /* DetailViewControllerEntrees.m */,
+				15A703DB1BD0116800A4829F /* CustomTableViewControllerSalads.h */,
+				15A703DC1BD0116800A4829F /* CustomTableViewControllerSalads.m */,
+				15A703DE1BD07C6700A4829F /* CustomTableViewCellSalads.h */,
+				15A703DF1BD07C6700A4829F /* CustomTableViewCellSalads.m */,
+				15A703E11BD162C300A4829F /* DetailViewControllerSalads.h */,
+				15A703E21BD162C300A4829F /* DetailViewControllerSalads.m */,
+			);
+			path = AwesomeGlutenFree;
+			sourceTree = "<group>";
+		};
+		1545197D1BC9E1B50093A4D9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1545197E1BC9E1B50093A4D9 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		154519961BC9E1B50093A4D9 /* AwesomeGlutenFreeTests */ = {
+			isa = PBXGroup;
+			children = (
+				154519971BC9E1B50093A4D9 /* AwesomeGlutenFreeTests.m */,
+				154519991BC9E1B50093A4D9 /* Info.plist */,
+			);
+			path = AwesomeGlutenFreeTests;
+			sourceTree = "<group>";
+		};
+		154519A11BC9E1B50093A4D9 /* AwesomeGlutenFreeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				154519A21BC9E1B50093A4D9 /* AwesomeGlutenFreeUITests.m */,
+				154519A41BC9E1B50093A4D9 /* Info.plist */,
+			);
+			path = AwesomeGlutenFreeUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		154519791BC9E1B50093A4D9 /* AwesomeGlutenFree */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 154519A71BC9E1B50093A4D9 /* Build configuration list for PBXNativeTarget "AwesomeGlutenFree" */;
+			buildPhases = (
+				154519761BC9E1B50093A4D9 /* Sources */,
+				154519771BC9E1B50093A4D9 /* Frameworks */,
+				154519781BC9E1B50093A4D9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AwesomeGlutenFree;
+			productName = AwesomeGlutenFree;
+			productReference = 1545197A1BC9E1B50093A4D9 /* AwesomeGlutenFree.app */;
+			productType = "com.apple.product-type.application";
+		};
+		154519921BC9E1B50093A4D9 /* AwesomeGlutenFreeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 154519AA1BC9E1B50093A4D9 /* Build configuration list for PBXNativeTarget "AwesomeGlutenFreeTests" */;
+			buildPhases = (
+				1545198F1BC9E1B50093A4D9 /* Sources */,
+				154519901BC9E1B50093A4D9 /* Frameworks */,
+				154519911BC9E1B50093A4D9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				154519951BC9E1B50093A4D9 /* PBXTargetDependency */,
+			);
+			name = AwesomeGlutenFreeTests;
+			productName = AwesomeGlutenFreeTests;
+			productReference = 154519931BC9E1B50093A4D9 /* AwesomeGlutenFreeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		1545199D1BC9E1B50093A4D9 /* AwesomeGlutenFreeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 154519AD1BC9E1B50093A4D9 /* Build configuration list for PBXNativeTarget "AwesomeGlutenFreeUITests" */;
+			buildPhases = (
+				1545199A1BC9E1B50093A4D9 /* Sources */,
+				1545199B1BC9E1B50093A4D9 /* Frameworks */,
+				1545199C1BC9E1B50093A4D9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				154519A01BC9E1B50093A4D9 /* PBXTargetDependency */,
+			);
+			name = AwesomeGlutenFreeUITests;
+			productName = AwesomeGlutenFreeUITests;
+			productReference = 1545199E1BC9E1B50093A4D9 /* AwesomeGlutenFreeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		154519721BC9E1B50093A4D9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = PD;
+				TargetAttributes = {
+					154519791BC9E1B50093A4D9 = {
+						CreatedOnToolsVersion = 7.0.1;
+					};
+					154519921BC9E1B50093A4D9 = {
+						CreatedOnToolsVersion = 7.0.1;
+						TestTargetID = 154519791BC9E1B50093A4D9;
+					};
+					1545199D1BC9E1B50093A4D9 = {
+						CreatedOnToolsVersion = 7.0.1;
+						TestTargetID = 154519791BC9E1B50093A4D9;
+					};
+				};
+			};
+			buildConfigurationList = 154519751BC9E1B50093A4D9 /* Build configuration list for PBXProject "AwesomeGlutenFree" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 154519711BC9E1B50093A4D9;
+			productRefGroup = 1545197B1BC9E1B50093A4D9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				154519791BC9E1B50093A4D9 /* AwesomeGlutenFree */,
+				154519921BC9E1B50093A4D9 /* AwesomeGlutenFreeTests */,
+				1545199D1BC9E1B50093A4D9 /* AwesomeGlutenFreeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		154519781BC9E1B50093A4D9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1545198D1BC9E1B50093A4D9 /* LaunchScreen.storyboard in Resources */,
+				1545198A1BC9E1B50093A4D9 /* Assets.xcassets in Resources */,
+				154519881BC9E1B50093A4D9 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		154519911BC9E1B50093A4D9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1545199C1BC9E1B50093A4D9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		154519761BC9E1B50093A4D9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				154519C11BCF3DFC0093A4D9 /* DetailViewControllerEntrees.m in Sources */,
+				154519B81BCAF98E0093A4D9 /* DetailViewController.m in Sources */,
+				15A703E01BD07C6700A4829F /* CustomTableViewCellSalads.m in Sources */,
+				154519BB1BCC1D1C0093A4D9 /* CustomTableViewControllerEntrees.m in Sources */,
+				15A703DD1BD0116800A4829F /* CustomTableViewControllerSalads.m in Sources */,
+				154519821BC9E1B50093A4D9 /* AppDelegate.m in Sources */,
+				1545197F1BC9E1B50093A4D9 /* main.m in Sources */,
+				154519B51BCA1C3B0093A4D9 /* CustomTableViewCell.m in Sources */,
+				154519B21BC9ECA70093A4D9 /* CustomTableTableViewController.m in Sources */,
+				15A703E31BD162C300A4829F /* DetailViewControllerSalads.m in Sources */,
+				154519BE1BCE01D70093A4D9 /* CustomTableViewCellEntrees.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1545198F1BC9E1B50093A4D9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				154519981BC9E1B50093A4D9 /* AwesomeGlutenFreeTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1545199A1BC9E1B50093A4D9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				154519A31BC9E1B50093A4D9 /* AwesomeGlutenFreeUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		154519951BC9E1B50093A4D9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 154519791BC9E1B50093A4D9 /* AwesomeGlutenFree */;
+			targetProxy = 154519941BC9E1B50093A4D9 /* PBXContainerItemProxy */;
+		};
+		154519A01BC9E1B50093A4D9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 154519791BC9E1B50093A4D9 /* AwesomeGlutenFree */;
+			targetProxy = 1545199F1BC9E1B50093A4D9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		154519861BC9E1B50093A4D9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				154519871BC9E1B50093A4D9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1545198B1BC9E1B50093A4D9 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1545198C1BC9E1B50093A4D9 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		154519A51BC9E1B50093A4D9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		154519A61BC9E1B50093A4D9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		154519A81BC9E1B50093A4D9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = AwesomeGlutenFree/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.pd.AwesomeGlutenFree;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		154519A91BC9E1B50093A4D9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = AwesomeGlutenFree/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.pd.AwesomeGlutenFree;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		154519AB1BC9E1B50093A4D9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = AwesomeGlutenFreeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.pd.AwesomeGlutenFreeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "";
+			};
+			name = Debug;
+		};
+		154519AC1BC9E1B50093A4D9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = AwesomeGlutenFreeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.pd.AwesomeGlutenFreeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "";
+			};
+			name = Release;
+		};
+		154519AE1BC9E1B50093A4D9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = AwesomeGlutenFreeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.pd.AwesomeGlutenFreeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = AwesomeGlutenFree;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		154519AF1BC9E1B50093A4D9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = AwesomeGlutenFreeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.pd.AwesomeGlutenFreeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = AwesomeGlutenFree;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		154519751BC9E1B50093A4D9 /* Build configuration list for PBXProject "AwesomeGlutenFree" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				154519A51BC9E1B50093A4D9 /* Debug */,
+				154519A61BC9E1B50093A4D9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		154519A71BC9E1B50093A4D9 /* Build configuration list for PBXNativeTarget "AwesomeGlutenFree" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				154519A81BC9E1B50093A4D9 /* Debug */,
+				154519A91BC9E1B50093A4D9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		154519AA1BC9E1B50093A4D9 /* Build configuration list for PBXNativeTarget "AwesomeGlutenFreeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				154519AB1BC9E1B50093A4D9 /* Debug */,
+				154519AC1BC9E1B50093A4D9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		154519AD1BC9E1B50093A4D9 /* Build configuration list for PBXNativeTarget "AwesomeGlutenFreeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				154519AE1BC9E1B50093A4D9 /* Debug */,
+				154519AF1BC9E1B50093A4D9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 154519721BC9E1B50093A4D9 /* Project object */;
+}
