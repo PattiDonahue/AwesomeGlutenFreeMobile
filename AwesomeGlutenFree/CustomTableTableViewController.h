@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "DetailViewController.h"
 
-@interface CustomTableTableViewController : UITableViewController
+
+@interface CustomTableTableViewController : UITableViewController <UISearchResultsUpdating>
 
 @end

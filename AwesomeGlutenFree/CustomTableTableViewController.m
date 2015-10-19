@@ -8,6 +8,8 @@
 
 #import "CustomTableTableViewController.h"
 #import "CustomTableViewCell.h"
+#import "Recipe.h"
+#import "DetailViewController.h"
 
 @interface CustomTableTableViewController ()
 
@@ -15,17 +17,16 @@
 
 @implementation CustomTableTableViewController
 {
-    //NSArray *recipes;
-    NSArray *recipeNames;
-    NSArray *recipeImages;
+    NSArray *recipes;
+    NSArray *searchResults;
+    UISearchController *searchController;
 }
+
+
 - (void)viewDidLoad {
     [super viewDidLoad];
-    recipeNames = @[@"Chocolate Sugar Cookies"];
-    recipeImages = @[@"chocsugarcookies.JPG"];
     
     //Initialize the Recipes array
-    /*
     Recipe *recipe1 = [Recipe new];
     recipe1.name = @"Chocolate Sugar Cookies";
     recipe1.image = @"chocsugarcookies.JPG";
@@ -39,7 +40,7 @@
     
     
     Recipe *recipe3 = [Recipe new];
-    recipe3.name = @"Chocolate Mountain";
+    recipe3.name = @"Easy Chocolate Mountain";
     recipe3.image = @"ChocolateMountain.jpg";
     recipe3.ingredients = [NSArray arrayWithObjects:@"Gluten free chocolate cake mix (King Arthur)", @"2 instant chocolate pudding mixes (Jello)", @"1 pint heavy cream", @"See cake mix and chocolate pudding for other ingredients", @"Make 2 - 8 or 9 in chocolate cakes, then make the chocolate pudding. Whip heavy cream with mixer and 2 tsp. sugar and 1 tsp. vanilla until it is stiff.  Use a large clear pyrex bowl if possible to layer chocolate cake, 1/2 the chocolate pudding, 1/2 the heavy cream, then duplicate, another chocolate cake, rest of chocolate pudding and rest of heavy cream.", nil];
     
@@ -73,12 +74,36 @@
     
     
     recipes = [NSArray arrayWithObjects:recipe1, recipe2, recipe3, recipe4, recipe5, recipe6, recipe7, recipe8, nil];
-    */
+    
+
+
+//{
+    //NSArray *recipes;
+   // NSArray *recipeNames;
+   // NSArray *recipeImages;
+//}
+    
+//- (void)viewDidLoad {
+   // [super viewDidLoad];
+    //recipeNames = @[@"Chocolate Sugar Cookies"];
+    //recipeImages = @[@"chocsugarcookies.JPG"];
+    
+    
+    
+    
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    searchController = [[UISearchController alloc]
+                        initWithSearchResultsController:nil];
+    [searchController.searchBar sizeToFit];
+    self.tableView.tableHeaderView = searchController.searchBar;
+    self.definesPresentationContext = YES;
+    
+    searchController.searchResultsUpdater = self;
+    searchController.dimsBackgroundDuringPresentation = NO;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -94,17 +119,16 @@
         return 1;
    }
 
+
+//search results only displayed when search controller is active so when user taps search field active property set to True
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
     {
-        return[recipeNames count];
+        if(searchController.active){
+            return searchResults.count ;
+        } else {
+        return[recipes count];
     }
-
-   // if (searchController.active){
-     //   return searchResults.count;
-    //} else {
-        //return[recipes count];
-    //}
-    //}
+    }
 
 
 
@@ -115,6 +139,7 @@
 //}
 
 
+//when search controller is active return search results when inactive return count of full recipe list
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     static NSString *cellIdentifier = @"Cell";
@@ -128,22 +153,52 @@
     
     // Configure the cell...
     //if (cell ==nil){
-        //cell = [[RecipeTableCell alloc] initWithStyle:UITableViewCellStyrleDefault reuseIdentifier:CellIdentifier];
+        //cell = [[RecipeTableCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
     //}
     //display recipe in table cell
     
-    //Recipe *recipe = [recipes objectAtIndex:indexPath.row];
+    Recipe *recipe = [recipes objectAtIndex:indexPath.row];
+    if (searchController.active) {
+        recipe =[searchResults objectAtIndex:indexPath.row];
+    } else {
+        recipe = [recipes objectAtIndex:indexPath.row];
+    }
     
-    //cell.nameLabel.text = recipe.name;
-    //cell.thumbnailImageView.image = [UIImage imageNamed:recipe.image];
     
-    cell.nameLabel.text = [recipeNames objectAtIndex:indexPath.row];
-    cell.thumbnailImageView.image = [UIImage imageNamed:[recipeImages objectAtIndex:indexPath.row]];
+    cell.nameLabel.text = recipe.name;
+    cell.thumbnailImageView.image = [UIImage imageNamed:recipe.image];
+    
+        //cell.nameLabel.text = [recipeNames objectAtIndex:indexPath.row];
+    //cell.thumbnailImageView.image = [UIImage imageNamed:[recipeImages objectAtIndex:indexPath.row]];
   
+        
+        
   //@[recipeImages objectAtIndex:indexPath.row]];
     
     return cell;
 }
+
+
+//UISearchResultsUpdating protocol defines method updateSearcResultsForSearchController updates when user makes changes in search bar
+-(void) updateSearchResultsForSearchController:(UISearchController *)asearchController {
+    
+    //pass it to filterContentForSearchText method
+    [self filterContentForSearchText:searchController.searchBar.text];
+    
+    //reload table data
+    [self.tableView reloadData];
+}
+
+
+//new method for content filtering NSPredicate name contains [c] - the c means comparison is case sensitive
+-(void)filterContentForSearchText:(NSString *)searchText {
+    NSPredicate *resultPredicate = [NSPredicate predicateWithFormat:@"name contains[c] %@", searchText];
+    
+    //with predicate defined filterArrayUsingPredicate returns new array containing objecst that match predicate
+    searchResults = [recipes filteredArrayUsingPredicate:resultPredicate];
+}
+
+
 
 
 /*
@@ -189,10 +244,15 @@
         NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
        DetailViewController *destViewController = segue.destinationViewController;
        
-       destViewController.recipeName = [recipeNames objectAtIndex:indexPath.row];
+      // destViewController.recipeName = [recipeNames objectAtIndex:indexPath.row];
        
-    //    Recipe *recipe = [recipes objectAtIndex:indexPath.row];
-    //    destViewController.recipe = recipe;
+       Recipe *recipe;
+       if (searchController.active) {
+           recipe = [searchResults objectAtIndex:indexPath.row];
+       } else {
+       recipe = [recipes objectAtIndex:indexPath.row];
+       }
+       destViewController.recipe = recipe;
     //}
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.

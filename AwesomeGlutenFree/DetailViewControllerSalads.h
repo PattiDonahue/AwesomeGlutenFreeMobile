@@ -11,5 +11,7 @@
 @interface DetailViewControllerSalads : UIViewController
 @property (nonatomic, strong) IBOutlet UILabel *saladsNameLabel;
 @property (nonatomic, strong) NSString *saladsRecipeName;
+@property (weak, nonatomic) IBOutlet UIImageView *saladsImageView;
+@property (weak, nonatomic) IBOutlet UITextView *saladsIngredientsTextView;
 
 @end

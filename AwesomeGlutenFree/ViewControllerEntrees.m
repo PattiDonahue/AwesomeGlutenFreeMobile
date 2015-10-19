@@ -1,29 +1,23 @@
 //
-//  DetailViewControllerSalads.m
+//  ViewControllerEntrees.m
 //  AwesomeGlutenFree
 //
-//  Created by Patti Donahue on 10/16/15.
+//  Created by Patti Donahue on 10/18/15.
 //  Copyright © 2015 PD. All rights reserved.
 //
 
-#import "DetailViewControllerSalads.h"
+#import "ViewControllerEntrees.h"
 
-@interface DetailViewControllerSalads ()
+@interface ViewControllerEntrees ()
 
 @end
 
-@implementation DetailViewControllerSalads
+@implementation ViewControllerEntrees
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    self.saladsNameLabel.text = self.saladsRecipeName;
-   // self.saladsImageView.image = [UIImage imageNamed:self.saladRecipe.image];
-    //NSMutableString *ingredientsTextView = [NSMutableString string];
-   // for (NSString* ingredient in self.recipe.ingredients) {
-    //    [ingredientsTextView appendFormat:@"%@\n", ingredient];
-    }
-//}
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

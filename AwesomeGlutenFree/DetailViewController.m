@@ -18,7 +18,18 @@
     [super viewDidLoad];
     //set label text with selected recipe
     
-    self.recipeLabel.text = self.recipeName;
+    self.title = self.recipe.name;
+    self.recipeImageView.image = [UIImage imageNamed:self.recipe.image];
+    NSMutableString *ingredientsTextView = [NSMutableString string];
+    for (NSString* ingredient in self.recipe.ingredients){
+        [ingredientsTextView appendFormat:@"%@\n", ingredient];
+    }
+    self.ingredientsTextView.text =ingredientsTextView;
+    
+    //self.recipeLabel.text = self.recipeName;
+   
+    //NSMutableString *directionsTextView = [NSMutableString string];
+    //for (NSString *direction in self.recipe.direction)
 }
 
 - (void)didReceiveMemoryWarning {

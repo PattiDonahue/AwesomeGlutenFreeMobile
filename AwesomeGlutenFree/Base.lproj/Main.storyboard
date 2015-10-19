@@ -44,7 +44,11 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Awesome Gluten Free Desserts" id="ZMb-yw-4Wo">
-                        <barButtonItem key="leftBarButtonItem" systemItem="stop" id="nCd-VD-8Kh"/>
+                        <barButtonItem key="leftBarButtonItem" title="Home" id="nCd-VD-8Kh">
+                            <connections>
+                                <segue destination="ejF-0e-gHk" kind="show" id="D7F-sh-VdE"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="B8l-y2-PIZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -63,18 +67,29 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uis-ex-G0e">
-                                <rect key="frame" x="231" y="289" width="139" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Ingredients and Directions" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uis-ex-G0e">
+                                <rect key="frame" x="180" y="319" width="213" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Usk-LC-Jcw">
+                                <rect key="frame" x="180" y="105" width="297" height="199"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="raO-xj-c17">
+                                <rect key="frame" x="180" y="348" width="240" height="128"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <toolbarItems/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
+                        <outlet property="ingredientsTextView" destination="raO-xj-c17" id="Usb-Ev-XoI"/>
+                        <outlet property="recipeImageView" destination="Usk-LC-Jcw" id="2cl-ag-pq9"/>
                         <outlet property="recipeLabel" destination="Uis-ex-G0e" id="KHP-4F-RKV"/>
                     </connections>
                 </viewController>
@@ -100,9 +115,11 @@
                                             <rect key="frame" x="0.0" y="0.0" width="567" height="199.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="StrawberryAvoSalad" translatesAutoresizingMaskIntoConstraints="NO" id="Xen-Cl-tuI">
+                                                    <rect key="frame" x="0.0" y="-195" width="567" height="474"/>
+                                                </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Salads" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IYi-l3-3uI">
                                                     <rect key="frame" x="48" y="32" width="106" height="36"/>
-                                                    <color key="backgroundColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="40"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
@@ -246,7 +263,11 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Awesome Gluten Free Salads" id="vol-aZ-aNF">
-                        <barButtonItem key="leftBarButtonItem" systemItem="stop" id="vnT-x6-4f1"/>
+                        <barButtonItem key="leftBarButtonItem" title="Home" id="vnT-x6-4f1">
+                            <connections>
+                                <segue destination="ejF-0e-gHk" kind="show" id="Sc5-Ap-6pQ"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YZS-0g-gLj" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -266,15 +287,26 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IOg-t9-k7e">
-                                <rect key="frame" x="96" y="289" width="42" height="21"/>
+                                <rect key="frame" x="180" y="319" width="42" height="21"/>
                                 <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="UUj-Ql-bBY">
+                                <rect key="frame" x="180" y="337" width="240" height="128"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wBf-tV-RAb">
+                                <rect key="frame" x="175" y="99" width="297" height="199"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
+                        <outlet property="saladsImageView" destination="wBf-tV-RAb" id="jD7-lb-Zu1"/>
+                        <outlet property="saladsIngredientsTextView" destination="UUj-Ql-bBY" id="7iq-CI-dBi"/>
                         <outlet property="saladsNameLabel" destination="IOg-t9-k7e" id="XU2-rF-1IO"/>
                     </connections>
                 </viewController>
@@ -322,7 +354,11 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Awesome Gluten Free Entrees" id="LMl-i3-ADH">
-                        <barButtonItem key="leftBarButtonItem" systemItem="stop" id="LKV-WV-NGe"/>
+                        <barButtonItem key="leftBarButtonItem" title="Home" id="LKV-WV-NGe">
+                            <connections>
+                                <segue destination="ejF-0e-gHk" kind="show" id="iPT-uP-dg0"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="d7W-YL-rff" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -341,15 +377,21 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d3U-fh-2C2">
-                                <rect key="frame" x="172" y="261" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Ingredients and Directions" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d3U-fh-2C2">
+                                <rect key="frame" x="180" y="312" width="186" height="31"/>
+                                <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rd6-4D-XBn">
-                                <rect key="frame" x="180" y="80" width="240" height="128"/>
+                                <rect key="frame" x="180" y="87" width="240" height="199"/>
                             </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="V7L-wl-JUQ">
+                                <rect key="frame" x="180" y="351" width="240" height="128"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -453,7 +495,11 @@
         </scene>
     </scenes>
     <resources>
+        <image name="StrawberryAvoSalad" width="680" height="1020"/>
         <image name="chocolatechipcookies" width="2816" height="2112"/>
         <image name="spinachshells2" width="5184" height="3094"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="Sc5-Ap-6pQ"/>
+    </inferredMetricsTieBreakers>
 </document>

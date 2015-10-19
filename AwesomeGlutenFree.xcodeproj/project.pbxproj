@@ -20,6 +20,8 @@
 		154519BB1BCC1D1C0093A4D9 /* CustomTableViewControllerEntrees.m in Sources */ = {isa = PBXBuildFile; fileRef = 154519BA1BCC1D1C0093A4D9 /* CustomTableViewControllerEntrees.m */; settings = {ASSET_TAGS = (); }; };
 		154519BE1BCE01D70093A4D9 /* CustomTableViewCellEntrees.m in Sources */ = {isa = PBXBuildFile; fileRef = 154519BD1BCE01D70093A4D9 /* CustomTableViewCellEntrees.m */; settings = {ASSET_TAGS = (); }; };
 		154519C11BCF3DFC0093A4D9 /* DetailViewControllerEntrees.m in Sources */ = {isa = PBXBuildFile; fileRef = 154519C01BCF3DFC0093A4D9 /* DetailViewControllerEntrees.m */; settings = {ASSET_TAGS = (); }; };
+		159325021BD2BD3100E97987 /* Recipe.m in Sources */ = {isa = PBXBuildFile; fileRef = 159325011BD2BD3100E97987 /* Recipe.m */; settings = {ASSET_TAGS = (); }; };
+		159325081BD4144300E97987 /* ViewControllerEntrees.m in Sources */ = {isa = PBXBuildFile; fileRef = 159325071BD4144300E97987 /* ViewControllerEntrees.m */; settings = {ASSET_TAGS = (); }; };
 		15A703DD1BD0116800A4829F /* CustomTableViewControllerSalads.m in Sources */ = {isa = PBXBuildFile; fileRef = 15A703DC1BD0116800A4829F /* CustomTableViewControllerSalads.m */; settings = {ASSET_TAGS = (); }; };
 		15A703E01BD07C6700A4829F /* CustomTableViewCellSalads.m in Sources */ = {isa = PBXBuildFile; fileRef = 15A703DF1BD07C6700A4829F /* CustomTableViewCellSalads.m */; settings = {ASSET_TAGS = (); }; };
 		15A703E31BD162C300A4829F /* DetailViewControllerSalads.m in Sources */ = {isa = PBXBuildFile; fileRef = 15A703E21BD162C300A4829F /* DetailViewControllerSalads.m */; settings = {ASSET_TAGS = (); }; };
@@ -69,6 +71,10 @@
 		154519BD1BCE01D70093A4D9 /* CustomTableViewCellEntrees.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomTableViewCellEntrees.m; sourceTree = "<group>"; };
 		154519BF1BCF3DFC0093A4D9 /* DetailViewControllerEntrees.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewControllerEntrees.h; sourceTree = "<group>"; };
 		154519C01BCF3DFC0093A4D9 /* DetailViewControllerEntrees.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewControllerEntrees.m; sourceTree = "<group>"; };
+		159325001BD2BD3100E97987 /* Recipe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Recipe.h; sourceTree = "<group>"; };
+		159325011BD2BD3100E97987 /* Recipe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Recipe.m; sourceTree = "<group>"; };
+		159325061BD4144300E97987 /* ViewControllerEntrees.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewControllerEntrees.h; sourceTree = "<group>"; };
+		159325071BD4144300E97987 /* ViewControllerEntrees.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewControllerEntrees.m; sourceTree = "<group>"; };
 		15A703DB1BD0116800A4829F /* CustomTableViewControllerSalads.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomTableViewControllerSalads.h; sourceTree = "<group>"; };
 		15A703DC1BD0116800A4829F /* CustomTableViewControllerSalads.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomTableViewControllerSalads.m; sourceTree = "<group>"; };
 		15A703DE1BD07C6700A4829F /* CustomTableViewCellSalads.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomTableViewCellSalads.h; sourceTree = "<group>"; };
@@ -150,6 +156,10 @@
 				15A703DF1BD07C6700A4829F /* CustomTableViewCellSalads.m */,
 				15A703E11BD162C300A4829F /* DetailViewControllerSalads.h */,
 				15A703E21BD162C300A4829F /* DetailViewControllerSalads.m */,
+				159325001BD2BD3100E97987 /* Recipe.h */,
+				159325011BD2BD3100E97987 /* Recipe.m */,
+				159325061BD4144300E97987 /* ViewControllerEntrees.h */,
+				159325071BD4144300E97987 /* ViewControllerEntrees.m */,
 			);
 			path = AwesomeGlutenFree;
 			sourceTree = "<group>";
@@ -317,6 +327,8 @@
 				15A703DD1BD0116800A4829F /* CustomTableViewControllerSalads.m in Sources */,
 				154519821BC9E1B50093A4D9 /* AppDelegate.m in Sources */,
 				1545197F1BC9E1B50093A4D9 /* main.m in Sources */,
+				159325021BD2BD3100E97987 /* Recipe.m in Sources */,
+				159325081BD4144300E97987 /* ViewControllerEntrees.m in Sources */,
 				154519B51BCA1C3B0093A4D9 /* CustomTableViewCell.m in Sources */,
 				154519B21BC9ECA70093A4D9 /* CustomTableTableViewController.m in Sources */,
 				15A703E31BD162C300A4829F /* DetailViewControllerSalads.m in Sources */,
