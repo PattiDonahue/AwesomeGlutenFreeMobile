@@ -16,8 +16,23 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    //set label text with selected recipe
+    
+    self.title = self.saladsRecipe.name;
+    self.saladsImageView.image = [UIImage imageNamed:self.saladsRecipe.image];
+    NSMutableString *saladsIngredientsTextView = [NSMutableString string];
+    for (NSString* ingredient in self.saladsRecipe.ingredients){
+        [saladsIngredientsTextView appendFormat:@"%@\n", ingredient];
+    }
+    self.saladsIngredientsTextView.text =saladsIngredientsTextView;
+    
+
+    
     // Do any additional setup after loading the view.
-    self.saladsNameLabel.text = self.saladsRecipeName;
+    
+    
+    //self.saladsNameLabel.text = self.saladsRecipeName;
    // self.saladsImageView.image = [UIImage imageNamed:self.saladRecipe.image];
     //NSMutableString *ingredientsTextView = [NSMutableString string];
    // for (NSString* ingredient in self.recipe.ingredients) {

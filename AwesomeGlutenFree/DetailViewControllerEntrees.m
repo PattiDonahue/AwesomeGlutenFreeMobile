@@ -16,8 +16,23 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    //set label text with selected recipe
+    
+    self.title = self.entreesRecipe.name;
+    self.entreesRecipeImageView.image = [UIImage imageNamed:self.entreesRecipe.image];
+    NSMutableString *entreesIngredientsTextView = [NSMutableString string];
+    for (NSString* ingredient in self.entreesRecipe.ingredients){
+        [entreesIngredientsTextView appendFormat:@"%@\n", ingredient];
+    }
+    self.entreesIngredientsTextView.text =entreesIngredientsTextView;
+    
+
+    
+    
+    
+    
     // Do any additional setup after loading the view.
-    self.entreesNameLabel.text = self.entreesRecipeName;
+    //self.entreesNameLabel.text = self.entreesRecipeName;
 }
 
 - (void)didReceiveMemoryWarning {

@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "DetailViewControllerSalads.h"
 
-@interface CustomTableViewControllerSalads : UITableViewController
+@interface CustomTableViewControllerSalads : UITableViewController <UISearchResultsUpdating>
 
 @end

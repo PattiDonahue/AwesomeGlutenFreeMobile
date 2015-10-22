@@ -10,5 +10,8 @@
 
 @interface CustomTableViewCellSalads : UITableViewCell
 @property (nonatomic, weak) IBOutlet UILabel *saladsNameLabel;
-@property (nonatomic, weak) IBOutlet UIImageView *thumbnailImageView;
+
+@property (weak, nonatomic) IBOutlet UIImageView *saladsThumbnailImageView;
+
+
 @end

@@ -7,8 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "CustomTableViewCellEntrees.h"
+//#import "CustomTableViewCellEntrees.h"
 #import "DetailViewControllerEntrees.h"
-@interface CustomTableViewControllerEntrees : UITableViewController
+@interface CustomTableViewControllerEntrees : UITableViewController <UISearchResultsUpdating>
 
 @end
